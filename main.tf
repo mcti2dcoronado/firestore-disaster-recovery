@@ -9,7 +9,7 @@ resource "google_cloud_scheduler_job" "capston2" {
   attempt_deadline = "320s"
 
   http_target {
-    http_method = "GET"
+    http_method = "POST"
     uri         = "https://cloudscheduler.googleapis.com/v1/projects/my-project-name/locations/us-west1/jobs"
 
     oauth_token {
